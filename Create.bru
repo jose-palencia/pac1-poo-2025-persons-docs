@@ -1,0 +1,20 @@
+meta {
+  name: Create
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{PATH}}/persons
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "firstName" : "Miguel",
+    "lastName": "Mejia",
+    "dni": "0401200000003",
+    "gender": "M"
+  }
+}

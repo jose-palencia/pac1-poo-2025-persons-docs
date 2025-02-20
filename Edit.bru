@@ -1,0 +1,20 @@
+meta {
+  name: Edit
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{PATH}}/persons/0d1746e9-0a42-4ce5-8ae8-c9808cc83711
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "firstName" : "Miguel | Editado",
+    "lastName": "Mejia | Editado",
+    "dni": "0401200000003",
+    "gender": "M"
+  }
+}
